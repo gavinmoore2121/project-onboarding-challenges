@@ -1,4 +1,4 @@
-package binary.tree;
+package aug.thirty.binary.tree;
 
 public class AVLTree<T extends Comparable<T>> {
     Node<T> head;

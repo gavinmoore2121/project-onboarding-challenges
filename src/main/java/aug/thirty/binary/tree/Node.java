@@ -1,4 +1,4 @@
-package binary.tree;
+package aug.thirty.binary.tree;
 
 public class Node<T extends Comparable<T>> {
     T data;

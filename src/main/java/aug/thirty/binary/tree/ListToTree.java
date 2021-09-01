@@ -1,4 +1,4 @@
-package binary.tree;
+package aug.thirty.binary.tree;
 
 import java.util.Arrays;
 import java.util.List;

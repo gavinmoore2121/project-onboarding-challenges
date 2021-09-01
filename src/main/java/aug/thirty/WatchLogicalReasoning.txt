@@ -1,0 +1,15 @@
+A watch, which loses time uniformly, was observed to be 5 minutes fast at 8.00 p.m. on Thursday. It was noticed to be 7
+ minutes slow at 8.00 a.m. on the subsequent Monday. When did the watch show the correct time ? Explanation needed.
+
+a) 7 a.m. Saturday b) 7 a.m. on Friday
+
+c) 10a.m. on Sunday d) 11 a.m. on Friday
+
+Solution: B.
+
+Total hours: 84 hours
+Total minutes slower than actual time: 12 minutes
+Hours for watch to slow down by 1 minute: 84 hours / 12 min slowed = 7 hours/min slowed.
+Hours until correct time from Thursday: 5 minutes slowed * 7 hours/min slowed = 35 hours until correct time.
+Correct time = 20:00 Thursday + 35 hours = 20:00 Friday + 11 hours = 07:00 Friday.
+Correct time = 7 a.m. on Friday, B.
