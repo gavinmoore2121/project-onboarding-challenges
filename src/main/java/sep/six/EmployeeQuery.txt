@@ -1,0 +1,35 @@
+-- Write an SQL query to seed sample data.
+
+create table Employee (
+  WORKER_ID int,
+  FIRST_NAME varchar(20),
+  LAST_NAME varchar(20),
+  SALARY int,
+  JOINING_DATE datetime,
+  DEPARTMENT varchar(10),
+  Constraint PK_EMP PRIMARY KEY (WORKER_ID)
+);
+
+insert into Employee values (1, "Rick", "Smith", 100000, "2021-02-20 09:00:00", "HR");
+insert into Employee values (2, "Sam", "Williams", 80000, "2021-06-11 09:00:00", "Admin");
+insert into Employee values (3,	"John",	"Brown", 300000, "2021-02-20 09:00:00",	"HR");
+insert into Employee values (4,	"Amy", "Jones", 500000, "2021-02-20 09:00:00", "Admin");
+insert into Employee values (5,	"Sean",	"Garcia",	500000,	"2021-06-11 09:00:00",	"Admin");
+insert into Employee values (6,	"Ryan",	"Miller",	200000,	"2021-06-11 09:00:00",	"Account");
+insert into Employee values (7,	"Patty", "Davis",	75000,	"2021-01-20 09:00:00",	"Account");
+insert into Employee values (8,	"Monica", "Rodriguez", 90000, "2021-04-11 09:00:00", "Admin");
+
+-- Write an SQL query to fetch worker names with salaries >= 50000 and <= 100000.
+select FIRST_NAME, LAST_NAME from Employee where SALARY >= 50000 AND SALARY < 100000;
+
+-- Query to fetch no. of workers from each department and print in descending order.
+select DEPARTMENT, count(WORKER_ID) from Employee GROUP BY DEPARTMENT ORDER BY count(WORKER_ID) DESC;
+
+-- Query to fetch intersecting records of two tables.
+select * from table1 INTERSECT select * from table2
+
+-- Query to fetch 5th highest salary without using TOP or RANK
+select FIRST_NAME, LAST_NAME, SALARY
+from Employee e1
+-- Find employee that has 4 employees with higher salaries.
+where 4 = (select count(SALARY) from Employee e2 WHERE e1.SALARY < e2.SALARY);
